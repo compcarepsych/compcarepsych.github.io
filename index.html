@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharmTracker Booking Widget</title>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <style>
+        /* Optional: Basic styling to ensure the iframe fills the container well */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Prevent scrollbars from the HTML page itself */
+            box-sizing: border-box; /* Include padding/border in element's total width and height */
+        }
+        /* Style for your specific embed iframe to make it fill the page */
+        #charmtracker-embed {
+            width: 100%;
+            height: 100%;
+            border: none; /* Ensure no border, as you had frameborder="0" */
+            overflow: hidden; /* Match your original style for the iframe */
+        }
+    </style>
+</head>
+<body>
+    <iframe id="charmtracker-embed" width="100%" height="1000" src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=fb5bcf97cf49b8d5fd8cc5d576cd335c577fa00efe79a8fbd7084f581ea7c467c791341ca9a05ba41d87f01a50de603ac2fe0580a6189219" style="overflow:hidden;" frameborder="0"></iframe>
+</body>
+</html>
